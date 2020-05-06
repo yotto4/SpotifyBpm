@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+#beat {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: -50px;
+  width: 100px;
+  height: 100%;
+  border-radius: 50%;
+  background-color: blue;
+}
+
+#trackName, #trackArtists, #tempo {
+  height: 1em;
+}
+
+#trackArtists {
+  opacity: 0.5;
+}
+
+#position {
+  margin: 0;
+  width: 100%;
+}
+
+#tempo::after {
+  content: ' BPM';
+}
